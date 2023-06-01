@@ -4,10 +4,18 @@
   <title>Product List</title>
 </head>
 <body>
-  <div id="productList"></div>
-  <select id="productSelect" onchange="displayProductDetails()">
-    <option value="">Select a product</option>
+  <h1>Product List</h1>
+  
+  <!-- User Story 2: Display product names in select dropdown -->
+  <label for="productSelect">Select a product:</label>
+  <select id="productSelect" onchange="showProductDetails()">
+    <option value="">Select</option>
   </select>
+  
+  <!-- User Story 1: Display all products -->
+  <div id="productList"></div>
+
+  <!-- User Story 3: Display selected product details -->
   <div id="productDetails"></div>
 
   <script src="app.js"></script>
